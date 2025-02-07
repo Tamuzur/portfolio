@@ -10,6 +10,7 @@ const routes: Routes = [
     {path: 'portfolio', component: PortfolioComponent},
     {path: 'resume', component: ResumeComponent},
     {path: 'Contact', component: ContactComponent},
+    {path: '**', component: HomeComponent, pathMatch: 'full'}
 
 ];
 
