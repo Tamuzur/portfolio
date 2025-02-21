@@ -1,1 +1,43 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    
+                    <div class="btn-link">Work Experience</div>
+
+                    <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                    <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Algo</h2>
+                    <h3 class="text-primary">Algo menos importante</h3>
+                    <ul>
+                        <li>item1</li>
+                        <li>item2</li>
+    
+                    </ul>
+    
+                </div>
+    
+            </accordion-group>
+            <accordion-group heading="Education">
+    
+            </accordion-group>
+            <accordion-group heading="Certifications">
+    
+            </accordion-group>
+            <accordion-group heading="Skills">
+    
+            </accordion-group>
+     
+        </accordion>
+    </div>
+
+
+
+
+</div>

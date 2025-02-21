@@ -14,6 +14,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 
 
@@ -37,7 +38,8 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     ModalModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    AccordionModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
