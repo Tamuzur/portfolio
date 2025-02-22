@@ -2,3 +2,10 @@
     padding: 2rem 1rem;
     background-color: #e9ecef;
 }
+.jumbotron a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.jumbotron a:hover img {
+    transform: scale(1.2); /* Aumenta un poco el tamaño */
+}
