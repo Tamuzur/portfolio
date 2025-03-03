@@ -4,5 +4,11 @@
 
 
 accordion-group::ng-deep .card-header {
-    background-color: #0055ff;
+    background-color: #90A4AE;
+}
+
+.custom-img {
+    width: 100px;
+    height: auto; 
+    border-radius: 10px; 
 }

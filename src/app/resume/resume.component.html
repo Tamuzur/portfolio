@@ -1,26 +1,21 @@
 <div class="container text-center">
     <!-- TODO: ... -->
-    <button (click)="DownloadFile" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
-
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border" style="background-color: #90A4AE;">Download PDF CV</button>
     <div class="pb-2">
         <accordion [isAnimated]="true" class="shadow">
             <accordion-group [(isOpen)]="isWorkExperienceOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     
-                    <div class="btn-link">Work Experience</div>
+                    <div class="btn-link">Experiencia laboral</div>
 
                     <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
                     <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
 
                 </button>
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Algo</h2>
-                    <h3 class="text-primary">Algo menos importante</h3>
-                    <ul>
-                        <li>item1</li>
-                        <li>item2</li>
-    
-                    </ul>
+                    <h2 class="mb-0">Alten - QA</h2>
+                    <br>
+                    <p>Durante las prácticas de mi Grado Superior, trabajé en un proyecto de aseguramiento de la calidad (QA) junto a un equipo. Utilizamos tecnologías como Selenium y Cucumber en Java, y realizamos numerosas pruebas siguiendo la metodologías ágiles como SCRUM.</p>
     
                 </div>
     
@@ -28,21 +23,18 @@
             <accordion-group [(isOpen)]="isEducationOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     
-                    <div class="btn-link">Education</div>
+                    <div class="btn-link">Educación</div>
 
                     <div *ngIf="!isEducationOpen" style="color: white;">></div>
                     <div *ngIf="isEducationOpen" style="color: white;">v</div>
 
                 </button>
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Algo</h2>
-                    <h3 class="text-primary">Algo menos importante</h3>
-                    <ul>
-                        <li>item1</li>
-                        <li>item2</li>
-    
-                    </ul>
-    
+                    <h2 class="mb-0">Desarrollador AWS (2024)</h2>
+                    <h4>Centro de estudios Tajamar</h4>
+                    <br>
+                    <h2 class="mb-0">Grado Superior DAM (2022-2024)</h2>
+                    <h4>IES Calderón de la Barca</h4>
                 </div>
     
             </accordion-group>
@@ -51,25 +43,23 @@
             <accordion-group [(isOpen)]="isCertificationsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     
-                    <div class="btn-link">Certifications</div>
+                    <div class="btn-link">Certificaciones</div>
 
                     <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
                     <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
 
                 </button>
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Algo</h2>
-                    <h3 class="text-primary">Algo menos importante</h3>
-                    <ul>
-                        <li>item1</li>
-                        <li>item2</li>
-    
-                    </ul>
+                    <h2 class="mb-0">AWS Certified Developer - Associate</h2>
+                    <br>
+                    <img src="../../assets/aws-certified-developer-associate.png" alt="" class="custom-img">
     
                 </div>
     
             </accordion-group>
-    
+
+        
+            <!-- TODO:SKILLS 
             <accordion-group [(isOpen)]="isSkillsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     
@@ -91,10 +81,8 @@
                 </div>
     
             </accordion-group>
+        -->
 
-            <accordion-group heading="Skills">
-    
-            </accordion-group>
      
         </accordion>
     </div>
