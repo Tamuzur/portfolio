@@ -39,7 +39,7 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     AppRoutingModule,
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
-    AccordionModule.forRoot()
+    AccordionModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
